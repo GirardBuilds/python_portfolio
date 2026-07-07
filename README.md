@@ -10,4 +10,6 @@ Learning Python through Automate the Boring Stuff with Python (3rd edition).
 - projects/ - 6 Specialty programs to build M2P1-6  < Curently working on 
 
 ## Progress
-Completed chapters 1-12, 18 & 19. Currently continuing through remaining chapters.
+Completed chapters 1-12,16, 18 & 19. Currently continuing through remaining chapters.
+
+used Mu code up to M1P# series, then switched to VScode
