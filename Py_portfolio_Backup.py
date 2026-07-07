@@ -6,7 +6,7 @@ time_date = now.strftime("%m-%d-%Y")
 print(time_date)
 
 location   = Path.home() / 'projects'
-walk_here  = Path.home() / 'Documents' / 'python_portfolio'
+walk_here  = Path.home() / 'Documents' / 'GirardBuilds' /'python_portfolio'
 zip_path   = location / f'Python_Backups-{time_date}.zip'
 
 backup_zip = zipfile.ZipFile(zip_path, 'w')
@@ -27,6 +27,6 @@ print("Total files added:", amount)
 extract_zip = zipfile.ZipFile(zip_path)
 print(extract_zip.namelist())
 extract_zip.close()
-print(f'backed up as = Python_Backups-{time_date}.zip')
-e = input('everything was backed up hit enter to close the window')
+print(f'Everything was backed up as | Python_Backups-{time_date}.zip')
+e = input(f'Backed up to {location}, hit enter to close the window')
 
