@@ -47,8 +47,9 @@ if date1 == date2:
 print(f"there are {days_between.days} days between the two dates")
 print(f"the first date was on a {date1.strftime('%A')}")
 print(f"the second date was on a {date2.strftime('%A')}")
-
-
+#print(type(days_between))
+if days_between.days > 5000:
+    print('soup')
 
 
 
