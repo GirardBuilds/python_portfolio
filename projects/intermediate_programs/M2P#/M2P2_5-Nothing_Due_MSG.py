@@ -37,9 +37,8 @@ CREATE TABLE IF NOT EXISTS users (
     last_caught_up TEXT
 );"""
 
-def get_user(user_id: int):
-    with conn() as c:
-        return c.execute("SELECT * FROM users WHERE user_id=?", (user_id,)).fetchone()
+
+#Added to db copy
 
 def get_last_caught_up(user_id: int,):
     with conn() as c:
@@ -50,18 +49,23 @@ def set_last_caught_up(user_id:int):
     with conn() as c:
         c.execute("UPDATE users SET last_caught_up=? WHERE user_id=?", (datetime.now().strftime(ISO), user_id))
 
+#Added to bot copy
 
-def reviews_with_card_text(user_id: int):
-    with conn() as c:
-        return c.execute(
-        """SELECT reviews.result, reviews.reviewed_at, cards.front
-           FROM reviews LEFT JOIN cards ON cards.card_id = reviews.card_id
-           WHERE reviews.user_id=? """,
-            (user_id,),
-        ).fetchall()
-
-
-
+if card is None:
+        value = db_Copy.get_last_caught_up(user_id)
+        value = value['last_caught_up']
+        if value is None:
+            pass
+        else:
+            dt = datetime.datetime.strptime(value,"%Y-%m-%d %H:%M:%S")
+            time_diff = datetime.now() - dt
+            if time_diff.days > 1:
+                return
+        await context.bot.send_message(
+            chat_id=chat_id,
+            text=f"You're all caught up ✅ — nothing due right now",)
+        db_Copy.set_last_caught_up(user_id)
+        return  # nothing due and no new cards; stay silent rather than nag
 
 
 
