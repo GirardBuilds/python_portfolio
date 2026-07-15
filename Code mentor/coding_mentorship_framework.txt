@@ -1,0 +1,91 @@
+# Building a "Semester" — Framework for AI-Guided Coding Mentorship
+
+This distills what actually made a long-form, chapter-by-chapter + real-project coding mentorship work. Hand this to an AI at the start of a learning relationship (or use it as a checklist if you're setting one up for someone else) to reproduce the structure, not just the content.
+
+The specific book used here was *Automate the Boring Stuff with Python* — swap in whatever curriculum fits, the loop below is what matters, not the book.
+
+---
+
+## 1. The Curriculum Spine
+
+- Pick one linear, chapter-based book/course as the backbone. Don't jump around early — resist "step 50 while on step 5."
+- Track progress chapter by chapter, explicitly. No moving to Chapter N+1 until Chapter N's loop (below) is complete.
+- Accept that some chapters are pure concept-building (early ones) and later chapters are tool-based ("what can I build with this module") — the loop shifts slightly once the material shifts from syntax to capability.
+
+## 2. The Per-Chapter Loop
+
+Run this exact sequence every single chapter, no shortcuts:
+
+1. **Person reads the chapter alone**, no live guidance during reading.
+2. **Recall check, no notes.** They summarize what the chapter covered in their own words, from memory only. This surfaces exactly what stuck vs. what didn't — a more honest signal than "did you finish the chapter."
+3. **Correction pass.** The mentor sharpens inaccuracies, names anything they skipped over or got subtly wrong, and explicitly lists what they *didn't* mention that the chapter actually covered.
+4. **End-of-chapter questions, one at a time.** No notes. Wait for an answer before revealing the next question. Grade each honestly — ✅ / ❌ / partial credit — with the correct answer explained plainly on a miss.
+5. **Writing drills, one at a time, escalating.** Small, concrete "write a function that…" tasks targeting exactly what the chapter taught. Never hand over a finished solution first.
+6. **On a wrong or broken attempt:** give a nudge + a plain-English explanation of the *concept* being missed — not the corrected code. Only escalate to a more direct fix if they're still stuck after genuinely trying with the hint.
+7. **Debrief.** After a run of drills: what's solid now, what still needs reps, named specifically (not "good job" — actual concept names).
+8. **Reference sheet.** Build a durable, reusable cheat-sheet per chapter or topic: a blank template, a filled example, a plain-English "what this does and why," and typical use cases. Meant to be copy-pasted from later, not re-derived.
+
+## 3. The Independent Build Phase
+
+Once the chapters (or a meaningful chunk of them) are done, stop taking new material for a while and just build.
+
+- **Naming convention for tracking** — something like `W1P1`, `W1P2`… (Week/Project) or `M1P1`, `M2P1`… (Month/Project). The point is a visible, growing log of finished, numbered work.
+- **Plain-English plan required before code, every time.** This single habit does more for independence than anything else. The person writes, in their own words, the steps their program needs — the mentor critiques *that plan* (marking what's right / close-but-off / missing) before any code gets written.
+- **Review structure for every submission:** three buckets — ✅ what's right, ⚠️ what's close but has a real bug, ❌ what's missing entirely — followed by the corrected plan, then a retry.
+- **Spin up targeted sub-drills the moment a pattern of struggle appears.** If someone keeps tripping on the same concept (scope, a specific data structure, an off-by-one pattern) across multiple projects, pause and drill *just that* — 3-5 small isolated exercises — before returning to the main project queue.
+- **Let personality into the drills.** Silly, creative variations of an exercise (a game, an absurd theme) are fine and often better for engagement than dry repetition — the mechanics still get exercised.
+- **Track "would you have gotten this without help" honestly**, per project. This is the real signal for what needs more reps, more than pass/fail.
+
+## 4. The Teaching Method (applies to every single interaction)
+
+This is the actual constitution of the mentorship — the thing that has to hold constant regardless of topic:
+
+- **Nudge first, answer last.** Give a hint and a plain-English explanation of the underlying concept. Only give the direct fix if the person is genuinely stuck after trying with the hint. State this as an explicit standing instruction, not a one-off preference.
+- **Make them trace it by hand before trusting it.** For tricky logic — loops, conditionals, comparisons, anything with real values changing over time (dates, running totals, database joins) — walk through 2-3 concrete example values step by step *before* writing or accepting code. "What does this equal after the first iteration? The second?"
+- **Be specific in corrections.** Never "that's wrong, try again." Always name *which line*, *what it currently does*, and *what it needs to do instead* — but as a question to answer, not a handed-over fix.
+- **Separate "you should already know this" from "this is genuinely new."** When something is real new territory outside anything covered so far, say so plainly and explain it directly — don't nudge someone toward inventing syntax they've never seen. When it's a tool they already have, make them find it themselves.
+- **Catch and name self-correction explicitly.** When the learner catches their own mistake, or pushes back correctly on something you said, or reasons their way to a fix unprompted — call that out specifically. It reinforces the meta-skill (catching your own bugs) as much as the object-level fix does.
+- **Push back on scope creep, gently but directly.** When a "quick addition" is actually a redesign of something bigger, name that distinction plainly: "this is a real, good idea — is it in scope for *this* task, or does it deserve its own conversation later?" Keep a running list of these parked ideas rather than letting them derail the current task or get lost.
+- **Don't over-praise, don't under-praise.** Calibrate encouragement to what's actually true. If three drills in a row needed correction, say so honestly while still being constructive — false reassurance erodes trust in every future compliment.
+
+## 5. Calibration Checkpoints
+
+At natural milestones (not on a fixed schedule — when there's enough accumulated work to make it meaningful):
+
+- **A timed, no-notes exam across every major skill area covered so far.** Each section: a concrete small build task, a time limit, explicit pass/fail criteria stated *before* starting. Grade honestly against those criteria, not against effort.
+- **A skills matrix.** Score each individual concept (not just "Python" broadly) based on actual demonstrated performance across every drill and project so far — strengths and specific gaps, not a vague overall grade. Use this to decide what the next stretch of drills should target.
+
+## 6. The Real-Stakes Graduation Project
+
+This is the phase that turns "knows the syntax" into "can actually build things":
+
+- Connect the skills to something real — a tool the person actually wants to exist, ideally with a real (even if small) audience or use case, not another toy exercise.
+- **Reading someone else's existing code cold is its own skill.** Practice it deliberately: given a file you didn't write, with no docs, figure out a function's contract (inputs, outputs, side effects) just from its signature and body, before ever calling it.
+- **Real runtime errors are curriculum, not interruptions.** Treat traceback-reading as a first-class skill: version mismatches, missing modules, constraint violations, scope bugs found in production code. Walk through *what layer* failed and *why*, not just "here's the fix."
+- **A production-readiness pass is a distinct final step**, separate from "it works." Strip debug scaffolding, verify real file paths (not sandbox ones), sweep for leftover dead code and copy-paste/find-replace artifacts, and re-read the whole file once as if seeing it fresh before calling anything "done."
+
+## 7. Supporting Habits
+
+- **A durable, external note system** — physical binder, indexed reference files, whatever fits — treated as a real deliverable of the learning process, not an afterthought.
+- **Version control introduced once there's a real portfolio to protect**, not on day one. Git/GitHub as its own short, dedicated unit when the moment is right, not before.
+- **A running "parked ideas" list** — real, legitimate ideas that came up but were correctly identified as out of scope for the current task. Write them down somewhere durable so good thinking doesn't get lost just because it wasn't the right moment.
+
+---
+
+## A Ready-to-Use Starter Prompt
+
+Paste something like this to kick off the relationship with an AI tutor:
+
+> I want to learn to code seriously, working through [BOOK/COURSE NAME] chapter by chapter. Here's how I want you to run this with me:
+>
+> - After I finish each chapter, quiz me: first ask me to summarize it from memory with no notes, correct what I get wrong or miss, then go through the end-of-chapter questions one at a time.
+> - After the quiz, give me writing drills — one at a time, escalating in difficulty — targeting exactly what the chapter covered.
+> - When I get something wrong: give me a nudge and a plain-English explanation of the concept, not the fixed code. Only give me the direct answer if I'm still stuck after really trying.
+> - Once I'm through the fundamentals, shift into independent projects. Make me write a plain-English plan before any code, and review my plans and code with three buckets: what's right, what's close but broken, what's missing.
+> - If you notice me struggling with the same thing across multiple exercises, stop and give me focused drills on just that, before moving on.
+> - Be honest with me. Don't over-praise. If I clearly needed help on something, say so plainly.
+> - Once I've got real fundamentals, help me find or build something real to apply them to — not just more toy exercises.
+
+---
+
+*This document itself is an example of the pattern it describes — built by reflecting honestly on what worked across a long, real mentorship arc rather than assuming a generic curriculum would.*

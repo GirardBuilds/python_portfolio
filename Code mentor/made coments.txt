@@ -1,0 +1,213 @@
+as someone whoes been learning python for about 130 days now id like to share my method on how i went from 0 code knowlage to being able to build moderate tools or projects
+
+its always ai code that,ai fix this error or ill just vibe code. But what about having an ai assist in teaching you to code so when something goes wrong in a project you can be confused but not oblivious 
+
+for starters you have to pick something and stick to no other way but through with deliberate practice trust me the search for shortcuts will leave you further behind then you would be had stayed course
+
+i chose "Automate the Boring Stuff with Python, By Al Swigart" 
+as my base python book using the code editor it suggests (Mu code) but it alone wasnt enough through trial and (alot of)error i made a study system having an ai as my mentor 
+
+starting prompts like:
+
+"I want to learn to code seriously, working through Automate the Boring Stuff with Python, By Al Swigart 3rd edition chapter by chapter. Here's how I want you to run this with me:
+
+After I finish each chapter, quiz me: first ask me to summarize it from memory with no notes, correct what I get wrong or miss, then go through the end-of-chapter questions one at a time.
+After the quiz, give me writing drills one at a time, escalating in difficulty targeting exactly what the chapter covered.
+When I get something wrong: give me a nudge and a plain-English explanation of the concept, not the fixed code. Only give me the direct answer if I'm still stuck after really trying.
+Once I'm through the fundamentals, shift into independent projects. Make me write a plain-English plan before any code, and review my plans and code with three buckets: what's right, what's close but broken, what's missing. You are not to show me any code as hints if im stuck have me paste what i have so far and nudge me in the right direction, once finnished the excersise 3 seperate practice drills bassed on what i struggled with
+If you notice me struggling with the same thing across multiple exercises, stop and give me focused drills on just that, before moving on.
+Be honest with me. Don't over-praise. If I clearly needed help on something, say so plainly.
+Once I've got real fundamentals, help me find or build something real to apply them to not just more toy exercises. "
+
+once your past the this is what this symbol does basics ive found it helpfull to write what the task or assignment code needs to be in english first like ill need a block to take the users input and send it to this function that then takes it and does [thing the task requires] and returns/prints...
+
+put blinders on and focus on one thing at a time taking in outside noise about coding step 50 when your on step 5 wont do you any favors
+i would stay away from the parlor trick apps that "teach" you how to code some might be ok but it seemed like trivia games on a coding subject rather then the single highest yeilding thing you can do which is actually typing code in a blank terminal with some kind of task like using what you know build this tool or covert an input.
+
+The big one not moving on when your still stuck on a subject or a particular function/module the act of trying to recall and implement it helps to learn the material not just to know of it. so trial and error often eventually you'll be able to wrap them in a try/except, ive pasted countless of my broken programs to be picked apart and to show me where im wrong only to re-do them from scratch, be sure to ask questions, make notes on code snipets and stay consistant. competency is built on dedication not found with motivation  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Title (pick one, or use your own):
+
+
+Confused but not oblivious - my method for learning Python with AI as a mentor, not a code generator
+130 days into learning Python - here's the actual method, not just "I used AI"
+
+
+
+As someone who's been learning Python for about 130 days now, I'd like to share my method for how I went from zero coding knowledge to being able to build moderate tools and projects.
+
+It's always "AI, code that" or "AI, fix this error" or "I'll just vibe code." But what about having an AI assist in teaching you to code, so when something goes wrong in a project, you're confused but not oblivious?
+
+For starters, you have to pick something and stick to it. There's no way but through, with deliberate practice. Trust me the search for shortcuts will leave you further behind than you would've been had you just stayed the course.
+
+I chose Automate the Boring Stuff with Python by Al Sweigart as my base book, using the code editor it suggests (Mu). But the book alone wasn't enough. Through trial and a lot of error, I built a study system treating an AI as my mentor.
+
+it started off rough but through frustration i molded the chat into an actual teaching/studying chat, had i the structure then as i do now id be much farther along but if this can help a new programer (from a slightly less new programer) Great or at the very least show you a different path if the others havent worked. 
+
+The main idea get quized from memory after every chapter, no notes allowed, drill one concept at a time, escalating in difficulty and ask never to be handed fixed code, only nudges and plain-English explanations, once fundamentals are solid, move onto real independent projects instead of more toy exercises.
+
+for thoes who want it:
+Ive asked the chat for a full prompt detailing the structre if anyone in the comments wants it and I've got the repo of everything built along the way if you want proof I actually went through it its literally just all my study material simple programs ive made though, i only started using git-hub recently so the commit message days are off, 127 days totaling 428hrs 176 programs made, kept a daily log as to not break the chain.
+
+Once you're past the "this is what this symbol does" basics, I've found it really helpful to write out what the task needs to do in plain English first. Something like: "I'll need a block that takes the user's input and sends it to this function, which then does [whatever the task requires] and returns or prints the result."
+
+Put blinders on and focus on one thing at a time. Taking in outside noise about coding worrying about step 50 when you're on step 5 won't do you any favors.
+
+I'd stay away from the parlor-trick apps that "teach" you how to code. Some might be fine, but they felt more like trivia games on a coding subject than the single highest-yield thing you can actually do: typing real code into a blank file with a real task attached. "Using what you know, build this tool." "Convert this input into that format."
+
+The big one: don't move on while you're still stuck on a subject or a particular function/module. The act of trying to recall and implement something not just read about it is what actually teaches you the material, not just makes you aware of it.
+
+It's trial and error, often a lot of it, until things like wrapping code in a try/except stop being something you look up and start being something you just reach for. I've pasted countless broken programs to be picked apart and shown exactly where I went wrong, only to redo them from scratch.
+
+Ask questions. Take notes on the code snippets that trip you up. Stay consistent.
+
+Competency is built on dedication not found with motivation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Something that actually helped me (130ish days into learning Python, went from zero to building real projects): stop treating AI as either "write this for me" or "fix this error" and use it to actually teach you instead. Over that time i literally had it make a collage like curiculum with projects and subject drills. pratcacing until i didnt need help with something and or pasted clean code(that i wrote) enough times on a subject to move on.
+
+Happy to share the actual prompt I built from the learning chat if it'd help.
+
+Have it quiz you from memory after you learn something, give you hints instead of fixed code when you're stuck, and make you explain in plain English what your code needs to do before you touch the keyboard.
+That last one was the biggest unlock for me specifically because most of my bugs used to come from not actually knowing what I wanted the code to do yet, not from typos.
+
+Also: don't move on while you're still stuck on something. Struggling to recall and rebuild it yourself is what makes it stick but rereading the explanation a fourth time doesn't. Simplify it take what you know and add to it, learn something new apply it right away. 
+
+
+
+
+Something that actually helped me (130ish days into learning Python, went from zero to building real projects): stop treating AI as either "write this for me" or "fix this error" and use it to actually teach you instead. Over that time I literally had it make a collage like curriculum with projects and subject drills. practicing until I didn't need help with something and or pasted clean code(that I wrote) enough times on a subject to move on.
+Happy to share the actual prompt I built from the learning chat if it'd help.
+Have it quiz you from memory after you learn something, give you hints instead of fixed code when you're stuck, and make you explain in plain English what your code needs to do before you touch the keyboard.
+That last one was the biggest unlock for me specifically because most of my bugs used to come from not actually knowing what I wanted the code to do yet, not from typos.
+Also: don't move on while you're still stuck on something. Struggling to recall and rebuild it yourself is what makes it stick but rereading the explanation a fourth time doesn't. Simplify it take what you know and add to it, learn something new apply it right away.  
+Its not supposed to be easy its supposed to be worth it!
+
+
+
+
+
+
+
+
+
+hey, I'm pretty new here so wanted to ask before just posting in case it gets auto removed.
+
+I built a telegram bot that quizzes you a few times a day think phone notification flashcards at semi-random intervals, so it re-asks a question later based on whether you got it right or wrong, kind of like Anki but as phone notifications instead of an app you open and deliberately flip through. built it for myself while going through automate the boring stuff with Python book and now I'm trying to get 3-4 people to actually run it for about two weeks and tell me if it's useful or just annoying.
+
+it's free, no signup beyond clicking a link to start it in telegram, and I'm not selling anything, just trying to see if the idea holds up before building more on top of it.
+
+as for the flashcards themselves id need to see what the pre-alpha testers would want and make a deck for their subject as I'm sure everyone wouldn't want the Python deck I run 
+
+I just wanted to ask for permission to make a post about it here
+happy to follow whatever rules you've got, just don't want it pulled. thanks
+
+-----------------------------------------------
+
+hey, quick question before i post or comment, i'm new to the sub and don't wanna break any rules.
+
+I built a telegram bot that quizzes you a few times a day think phone notification flashcards at semi-random intervals, so it re-asks a question later based on whether you got it right or wrong, kind of like Anki but as phone notifications instead of an app you open and deliberately flip through. built it for myself while going through automate the boring stuff with Python book and now I'm trying to get 3-4 people to actually run it for about two weeks and tell me if it's useful or just annoying.
+
+it's free, no signup beyond clicking a link to start it in telegram, and I'm not selling anything, just trying to see if the idea holds up before building more on top of it.
+
+as for the flashcards themselves id need to see what the pre-alpha testers would want and make a deck for their subject as I'm sure everyone wouldn't want the Python deck I run
+
+instead of making a whole post, would it be ok if i just mentioned it in threads where someone's actually talking about forgetting stuff, repateded revision memory retention or having trouble staying consistent with studying? just trying to do it right instead of dropping it in without asking first.
+
+thanks
+
+
+
+
+
+i wont sugarcoat it i know nothing of this field I'm just a guy whos learning / building with Python 
+
+I built a telegram bot that quizzes you a few times a day think phone notification flashcards at semi-random intervals between a specified time, messaging you a question then it re-asks the question sooner or later based on whether you got it right or wrong.
+
+kind of like Anki or similar study apps but as phone notifications instead of an app you open and deliberately flip through. 
+
+built it for myself while going through automate the boring stuff with Python book and now I'm trying to get 3-4 people to actually run it for about two weeks and tell me if it's useful or just annoying.
+
+it's free, no signup beyond clicking a link to start it in telegram, and I'm not selling anything, just trying to see if the idea holds up before building more on top of it. I intend to keep the bot as a free resource to help people study 
+
+as for the flashcards themselves id need to have the person and or community help and make a deck for their subject as I'm sure everyone wouldn't want the Python deck I run 
+
+if anyone is intrested in the bot let me know
+
+
+I just wanted to ask for permission to make a post about it here pretty please 
+ill follow whatever rules you've got, or move on from a swift no if not in your thread. 
+Thanks
+
+
+I'm just a guy whos learning / building with Python 
+
+my ask is within the comments of groups can i recommend a telegram study bot i made 
+
+its a phone notification flashcard bot messaging you a question from your deck then it re-asks the question sooner or later based on whether you got it right or wrong.
+
+it's free, no signup beyond clicking a link to start it in telegram, and I'm not selling anything, just trying to see if the idea holds up before building more on top of it. I intend to keep the bot as a free resource to help people study 
+
+as for the flashcards themselves id need to have the person and or community help and make a deck for their subject as I'm sure everyone wouldn't want the Python deck I run 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reddit's self-promo rules are annoying but there are real ways around them — and honestly Reddit shouldn't be your only channel anyway. Here's what tends to work:
+Working within Reddit's rules
+
+Check each sub's wiki/sidebar for a self-promo exception — a lot of study subreddits (r/GetStudying, r/StudyTips, etc.) run a weekly "Feedback Friday" or "Self-Promo Saturday" megathread where tools are fair game.
+DM the mods directly and ask. A short, honest message ("I built a free study tool, would love feedback from this community, is there a way I can share it within your rules?") gets approved more often than people expect — mods mostly want to filter spam, not genuine builders.
+Build some karma/history in the sub first by actually participating, then when someone posts "I keep forgetting X" or "what apps do you use to study," reply helpfully and mention your bot as one option. That's a comment, not a promo post, and it reads as organic.
+
+Communities built specifically for this
+These exist so builders don't have to fight sub rules at all:
+
+r/SideProject, r/AlphaandBetaUsers, r/EntrepreneurRideAlong — all welcome "here's what I built, want testers" posts.
+Indie Hackers (indiehackers.com) — forum + "Show IH" style posts, very testing-friendly crowd.
+Product Hunt — a proper launch there gets you testers who like trying new things.
+Hacker News "Show HN" — works well if you frame it around the technical/interesting angle (random-interval spaced repetition via Telegram).
+BetaList, Betabound, Erli Bird — sites literally built to match early apps with testers.
+
+Where your actual audience already hangs out
+
+Studying/productivity Discord servers (studytube, studygram-adjacent servers, ADHD-and-studying servers) tend to be more relaxed about self-promo than Reddit, especially if you ask first or use a dedicated "tools/resources" channel.
+University-specific spaces: your own campus subreddit, class GroupMes, or campus Discords are usually much friendlier to a student-made tool than a general studying subreddit.
+TikTok/Instagram #studytok content — even a rough 15-second demo of a flashcard notification popping up can pull curious testers, and that audience already wants random-interval prompts (it maps well to spaced repetition, which people in that niche actively search for).
+Telegram itself has bot-tester and dev communities where people specifically look for new bots to try.
+
+One more lever: Reddit ads targeting the exact subreddits that ban organic self-promo is a legit way to reach that audience without breaking any rules, if you're willing to spend a small amount.

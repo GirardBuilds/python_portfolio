@@ -1,0 +1,26 @@
+
+M3P1 — First API. 
+FastAPI hello-world, then JSON endpoints wrapping logic you already own — your M1 unit-converter as a web service. Teaches: routes, request/response, what "an API" physically is. This vocabulary is 80% of speaking-code-to-agent for backends.
+
+M3P2 — API over a database. 
+REST-ify the expense tracker: endpoints that create/read rows in SQLite. This is structurally identical to what the Phase 1 backend does (FastAPI in front of your schema) learned on stakes-free material.
+
+M3P3 — Testing, 
+the crown jewel. pytest against sm2.py — code you know intimately, with known-correct behavior. Write tests that would have caught the caught-up inversion: concrete values on both sides of every boundary, the manual's section 4 turned into executable form. This is the single highest-leverage skill on the list, because tests are how a director verifies agent output at scale — you can't hand-trace everything an agent generates, but you can make the agent's code pass your tests. In the AI-building workflow, test-writing largely is the director's job.
+
+M3P4 — Consuming APIs. 
+The requests library against some public API (weather, whatever) — the client's side of the conversation, so you've sat in both chairs. ATBS's web chapter covers the ground.
+
+M3P5 — The pair. 
+A tiny API plus a separate script that consumes it. Trivial individually; the point is watching two programs talk over HTTP on your own machine — after this, "app talks to backend" stops being abstract forever.
+
+M3P6 — Reading JS/TS, 
+not writing it. One deliberate literacy sprint: a syntax tour (how functions, objects, async look), then read a real React Native component or two from a tutorial and practice saying what it does. The bar is code review literacy — could you spot an inverted condition in an agent's JS the way you'd now spot one in Python? Writing fluency is a Branch-A, post-gate investment.
+
+
+Parallel reading track 
+(scroll-break material, zero build): Expo push notification docs (this is OPEN-1's homework — you'll be able to answer the spike question partly from reading), an FCM/APNs conceptual overview (what a device token is, why they go stale), and skimming what a React Native project's file layout looks like. Reading only; the moment a terminal opens with npx create-expo-app, that's the line.
+
+One process habit to add during M3, cheap now and essential later: commit each M3 project to Git with real messages, and try one branch-and-merge on yourself. Agent workflows hand you diffs and PRs; a director who's comfortable reading a diff reviews at ten times the speed of one who isn't.
+
+Priority stack for the window stays: recruiting first (it's minutes a day, not hours — send, then code), Monday ops loop, M3 in the Mon–Thu blocks, reading in the gaps. And the eval chat takes the M3 reviews as usual — same division as always.
